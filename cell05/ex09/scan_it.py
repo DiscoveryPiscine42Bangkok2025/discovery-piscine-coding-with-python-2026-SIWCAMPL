@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 import sys
-import re
-if len(sys.argv) != 3:
+if len(sys.argv) != 2:
     print("none")
 else:
-    keyword = sys.argv[1]
-    text = sys.argv[2]
-    matches = re.findall(keyword, text)
-    if len(matches) > 0:
-        print(len(matches))
+    target_parameter = sys.argv[1] 
+    user_input = input("What was the parameter? ") 
+        print("Good job!")
     else:
-        print("none")
+        print("Nope, sorry...")
